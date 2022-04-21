@@ -6,6 +6,9 @@
 
   tasks:
 
-    - name: Display all variables/facts known for a host
+    - name: show user's (not root's) home
       ansible.builtin.debug:
-        var: hostvars[inventory_hostname]
+        var: home
+
+  roles:
+    - demo
