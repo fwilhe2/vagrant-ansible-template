@@ -19,7 +19,7 @@ Vagrant.configure(2) do |config|
     end
 
     config.vm.define "ubuntu" do |ubuntu|
-      ubuntu.vm.box = "generic/ubuntu2110"
+      ubuntu.vm.box = "generic/ubuntu2204"
       ubuntu.vm.provider 'libvirt' do |provider|
         provider.memory = 1024
         provider.cpus = 2
